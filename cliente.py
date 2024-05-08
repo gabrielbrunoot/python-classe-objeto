@@ -1,8 +1,9 @@
 class Cliente:
-    def __init__(self, nome, anoNascimento, sexo, endereco, ativo):
+    def __init__(self, nome, anoNascimento, sexo, saldo, endereco, ativo):
         self.nome = nome
         self.anoNascimento = anoNascimento
         self.sexo = sexo
+        self.saldo = saldo
         self.endereco = endereco
         self.ativo = ativo
 
@@ -13,6 +14,7 @@ class Cliente:
         print("nome:", self.nome)
         print("anoNascimento:", self.anoNascimento)
         print("sexo:", self.sexo)
+        print("saldo:", self.saldo)
         print("endereco:", self.endereco)
         print("ativo:", self.ativo)
 
