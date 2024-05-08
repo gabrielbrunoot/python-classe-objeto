@@ -18,11 +18,25 @@ class Cliente:
         print("endereco:", self.endereco)
         print("ativo:", self.ativo)
 
+
     def verificaClienteVivo(self):
         if self.ativo:
             print("O cliente", self.nome, "esta ativo")
         else:
             print("O cliente", self.nome, "inativo")
+
+
+    def calcularIdade(self):
+        anoAtual = 2024
+        idade = (anoAtual - self.anoNascimento)
+        print("A idade do Cliente e", idade)
+
+
+    def verificarSaldo(self):
+        if self.saldo >= 0:
+            print("O saldo do cliente", self.nome, "e positivo")
+        else:
+            print("O saldo do cliente", self.nome, "negativo")
 
 
 objeto = Cliente("Bruno", 2007, "M", 5000, "Rua 15 novembro", True)
@@ -35,3 +49,13 @@ objeto3.imprimir()
 objeto.verificaClienteVivo()
 objeto2.verificaClienteVivo()
 objeto3.verificaClienteVivo()
+
+
+objeto.calcularIdade()
+objeto2.calcularIdade()
+objeto3.calcularIdade()
+
+
+objeto.verificarSaldo()
+objeto2.verificarSaldo()
+objeto3.verificarSaldo()
